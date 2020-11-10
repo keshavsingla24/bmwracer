@@ -29,7 +29,6 @@ function setup() {
   BMW = createSprite(200,200,50,50);
   BMW.addImage(BMWImage);
   BMW.scale=0.3;
-  BMW.debug=true;
   BMW.setCollider("rectangle",0,0,100,250)
 }
 
@@ -75,12 +74,10 @@ function spawnbarricade() {
     barricade = createSprite(100,-50)
     barricade.addImage(barricadeImage);
     barricade.scale=0.3;
-    barricade.debug=true;
-    
+ 
     pothole = createSprite(10,10)
     pothole.addImage(potholeImage);
     pothole.scale=0.5;
-    pothole.debug=true;
     pothole.setCollider("circle",0,0,30)
 
     barricade.x= Math.round(random(120,400))
